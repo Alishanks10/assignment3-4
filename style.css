@@ -1,0 +1,20 @@
+.banner{
+    background-color: rgb(46, 46, 107);
+    font-size: 1rem;
+    padding: 10px;
+    color: white;
+}
+
+.conversion{
+    padding: 20px;
+}
+
+.button{
+    float: right;
+    color: white;
+    background-color: rgb(46, 46, 107);
+    margin: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
