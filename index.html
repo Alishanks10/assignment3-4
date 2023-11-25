@@ -11,25 +11,30 @@
         <h1>US Dollar to Canadian Dollar.</h1>
         <h3>Convert USD to CAD at the real exchange rate</h3>
     </div>
-    <div class="conversion" style="display:flex; justify-content: space-between;">
+    <div class="conversion" style="display: flex; justify-content: space-between;">
         <div>
             <label for="Amount">Amount</label><br>
+            <div style="background-color: rgb(85, 85, 184); height: auto; width: 230px;">
             <input type="text" id="amount" name="amount">
-            <select name="currency" id="currency">
-                <option value="usd"><img src="">USD</option>
-                <option value="cad">CAD</option>
-            </select>
+                <select name="currency" id="currency" style="background-color: transparent; border-style: none; -webkit-appearance: none;">
+                    <option value="usd">🇺🇸&nbsp;USD</option>
+                    <option value="cad">🇨🇦&nbsp;CAD</option>
+                </select>
+            </div>
         </div>
-        <img src="img.png" alt="exchange-logo">
+        <img src="img.png" alt="exchange-logo" height="30px" style="padding-top: 10px;">
         <div>
             <label for="Converted_to">Converted to</label><br>
+            <div style="background-color: rgb(85, 85, 184); height: auto; width: 230px;">
             <input type="text" id="Converted" name="Converted">
-            <select name="currency" id="Converted_to">
-                <option value="usd">USD</option>
-                <option value="cad">CAD</option>
+            <select name="currency" id="Converted_to" style="background-color: transparent; border-style: none; -webkit-appearance: none;">
+                <option value="usd">🇺🇸&nbsp;USD</option>
+
+                <option value="cad">🇨🇦&nbsp;CAD</option>
             </select>
         </div>
-    </div>
+        </div>
+    </div> 
 
     <button id="hippo"class="button" type="button" onclick="updateValue()">
         Convert
@@ -38,9 +43,6 @@
     <script src="main.js">
 
     </script>
-
   
-
-    
 </body>
 </html>

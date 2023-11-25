@@ -1,16 +1,16 @@
 function usdToCad(cad){
-    var usd = cad * 1.4
+    var usd = parseFloat(cad * 1.36).toFixed(3);
     return usd
 }
 
 function cadToUsd(usd){
-    var cad = usd * 0.73
+    var cad = parseFloat(usd * 0.73).toFixed(3); 
     return cad
 }
 
 function updateValue() {
-     amount = document.getElementById("amount").value;
-     currency = document.getElementById("currency").value;
+    amount = document.getElementById("amount").value;
+    currency = document.getElementById("currency").value;
     Converted=document.getElementById("Converted");
     Converted_to=document.getElementById("Converted_to");
    if(currency=="usd")
@@ -21,6 +21,5 @@ function updateValue() {
    else{
     Converted.value=cadToUsd(amount);
     Converted_to.value="usd";
-
    }
 }
